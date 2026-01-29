@@ -18,6 +18,7 @@ namespace CapaPresentacion
 
             if (acceso)
             {
+                Session["usuario"] = txtUsuario.Text;
                 Response.Redirect("Principal.aspx");
             }
             else
